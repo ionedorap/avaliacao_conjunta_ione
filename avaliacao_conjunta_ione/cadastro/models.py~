@@ -1,0 +1,24 @@
+from django.db import models
+
+class Cliente(models.Model):
+	Nome = models.CharField('Nome',max_length=100,null=True)
+	CPF = models.CharField('CPF',max_length=14,null=True)
+	DataNascimento = models.DateField('Data de Nascimento',null=True)
+	Telefone = models.CharField('Telefone',max_length=15,null=True)
+	Celular = models.CharField('Celular',max_length=15,null=True)
+	Email = models.EmailField('Endereço de email',max_length=100)
+	Logradouro = models.CharField('Logradouro', max_length=100,null=True)
+	Numero = models.IntegerField('Número',null=True)
+	Complemento = models.CharField('Complemento', max_length=100,null=True,blank=True)
+	Bairro = models.CharField('Bairro', max_length=100,null=True)
+	
+
+
+class Filmes(models.Model)
+	Nome = models.CharField('Nome',max_length=100,null=True)
+	DataLancamento = models.DateField('Data de Lançamento',null=True)
+	Quantidade =  models.IntegerField('Número',null=True)
+	
+
+
+
